@@ -1,8 +1,8 @@
 # KaiBab
 
-**아이콘 한 번으로 보는 KAIST 식단.**
+**식당별 메뉴와 가격을 확인하는 KAIST 식단 확장 프로그램입니다.**
 
-A compact, unofficial KAIST cafeteria menu extension for Chrome, in Korean and English.
+Check menus and prices at KAIST cafeterias in Korean or English, right from Chrome.
 
 [홈페이지](https://legojeon.github.io/kaibab/) · [개인정보처리방침](https://legojeon.github.io/kaibab/privacy.html) · [문의 및 버그 제보](https://github.com/legojeon/kaibab/issues)
 

@@ -14,7 +14,7 @@ Prepared locally
 Still required before submission
 [done] Reviewed and published the PUBLIC legojeon/kaibab repository with user authorization.
 [done] Configured GitHub Pages to publish /docs from the main branch.
-[ ] Confirm the completed Pages deployment and unauthenticated privacy URL before submission.
+[done] Pages deployment succeeded; home, privacy policy and Issues each returned HTTP 200 without login.
 [ ] Confirm publisher display name; independently register/verify the Chrome Web Store developer account email.
 [ ] Complete developer registration / one-time fee and required account security checks in the current dashboard.
 [ ] Confirm rights/terms for public redistribution of the school menu content. The code uses public pages,

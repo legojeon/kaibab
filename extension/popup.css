@@ -1,0 +1,81 @@
+:root{color-scheme:light;--ink:#1d2c42;--muted:#78869a;--blue:#004c98;--line:#e0e6ee;--paper:#f5f7fa;font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;color:var(--ink);font-size:13px}
+
+*{box-sizing:border-box}
+body{width:380px;height:520px;margin:0;background:var(--paper);display:flex;flex-direction:column}
+button,select,input{font:inherit}
+button,a,select,input,summary{-webkit-tap-highlight-color:transparent}
+button{cursor:pointer}
+button:disabled{cursor:default;opacity:.35}
+button,select,a,summary,input{outline-offset:3px}
+button:focus-visible,select:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible{outline:2px solid var(--blue)}
+[hidden]{display:none!important}
+.icon-button{display:grid;place-items:center;flex-shrink:0;width:30px;height:30px;border:0;border-radius:9px;background:transparent;color:var(--muted)}
+.icon-button:hover{background:#e8eef7;color:var(--blue)}
+svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.controls{padding:18px 20px 14px;flex-shrink:0}
+.restaurant-row{display:flex;align-items:center;gap:7px}
+.restaurant-row .select-wrap{flex:1;min-width:0}
+.select-wrap{position:relative}
+.select-wrap select{appearance:none;width:100%;height:44px;border:1px solid #d6dfeb;border-radius:11px;padding:0 36px 0 13px;background:#fff;color:var(--ink);font-size:14px;font-weight:650;cursor:pointer}
+.select-wrap>svg{position:absolute;right:12px;top:13px;pointer-events:none;color:var(--blue)}
+.date-row{display:flex;align-items:center;gap:3px;margin:15px 0 12px}
+.date-display{flex:1;position:relative;display:flex;align-items:center;justify-content:center;gap:7px;font-size:14px;font-weight:650;min-height:30px}
+.date-display input{position:absolute;inset:0;opacity:0;width:100%;height:100%;cursor:pointer}
+.date-display input::-webkit-calendar-picker-indicator{position:absolute;inset:0;width:auto;height:auto;cursor:pointer}
+.date-display:focus-within{outline:2px solid var(--blue);border-radius:5px}
+#today-badge{font-size:10px;font-weight:600;padding:3px 6px;border-radius:5px;background:#e5eef9;color:#245992}
+.text-button{background:none;border:0;color:var(--blue);font-size:11px;padding:6px 0 6px 6px}
+.meal-tabs{display:flex;gap:4px;padding:4px;background:#e8edf5;border-radius:11px}
+.meal-tabs button{flex:1;border:0;background:transparent;color:#77859a;border-radius:8px;padding:9px 0;font-size:12px;font-weight:600;transition:background .15s}
+.meal-tabs button span{margin-right:4px}
+.meal-tabs button[aria-selected=true]{color:#fff;background:var(--blue);box-shadow:0 2px 4px #0035671a}
+.meal-tabs button:hover:not([aria-selected=true]){background:#dce6f4}
+.guide-label{margin:15px 0 0;color:var(--blue);font-size:12px}
+main{flex:1;min-height:0;overflow-y:auto;padding:0 20px 16px;scrollbar-width:thin;scrollbar-color:#c8d2e2 transparent}
+.status{color:var(--muted);font-size:11px;line-height:1.6;margin-bottom:9px}
+.status:empty{display:none}
+.status.warning{color:#9c6725;background:#fff3df;padding:10px 12px;border-radius:9px}
+.meal-card,.guide-card{background:white;border:1px solid var(--line);border-radius:13px;overflow:hidden;margin-bottom:10px}
+.card-header{display:flex;align-items:center;justify-content:space-between;padding:14px 16px 12px;border-bottom:1px dashed var(--line)}
+.card-header h2{font-size:13px;margin:0;font-weight:700}
+.time{color:var(--blue);font-size:11px;font-variant-numeric:tabular-nums}
+.menu-body{padding:11px 16px 14px}
+.menu-group+.menu-group{margin-top:13px;padding-top:13px;border-top:1px solid #eef1f5}
+.menu-line{margin:0;line-height:1.85;font-size:13px;overflow-wrap:anywhere}
+.menu-line.corner{font-weight:700;color:var(--blue);margin-bottom:3px}
+.menu-line.calorie{color:var(--muted);font-size:11px;margin-top:5px}
+.menu-line.long{font-size:12px;color:#6c7b8e;line-height:1.7}
+.empty-state{text-align:center;padding:27px 14px 30px;background:#fff;border:1px solid var(--line);border-radius:13px}
+.empty-icon{font-size:28px;color:#8ca4c2;display:block;margin-bottom:13px}
+.empty-state h2{font-size:14px;margin:0 0 8px}
+.empty-state p{font-size:12px;line-height:1.7;color:var(--muted);margin:0;white-space:pre-line}
+.retry-button{margin-top:16px;background:var(--blue);color:white;border:0;padding:9px 16px;border-radius:8px}
+.guide-card h2{font-size:14px;margin:0;padding:15px 16px 0}
+.guide-card p{white-space:pre-line;line-height:1.85;padding:10px 16px 15px;margin:0;overflow-wrap:anywhere;font-size:12px}
+details{border:1px solid var(--line);border-radius:10px;background:#eef2f7;margin-top:12px}
+summary{cursor:pointer;list-style:none;font-size:11px;color:#61758e;padding:12px;display:flex;justify-content:space-between;align-items:center}
+summary::-webkit-details-marker{display:none}
+details[open] summary .notice-toggle{transform:rotate(45deg)}
+details p{white-space:pre-line;font-size:11px;line-height:1.8;padding:0 12px 12px;margin:0;color:#63748a;overflow-wrap:anywhere}
+.disclaimer{font-size:10px;text-align:center;color:#8b96a6;line-height:1.5;margin:14px 0 0}
+.loading{padding:20px 16px}
+.skeleton{height:10px;background:#eaf0f7;border-radius:6px;margin-bottom:14px;animation:breathe 1.2s ease-in-out infinite alternate}
+.skeleton:nth-child(2n){width:73%}
+.skeleton:nth-child(3n){width:88%}
+@keyframes breathe{to{opacity:.35}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}
+}
+
+
+.corner-row{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin:0 0 7px;font-size:13px;line-height:1.8;color:var(--blue);font-weight:700}
+.corner-title{min-width:0;overflow-wrap:anywhere}
+.price{white-space:nowrap;flex-shrink:0;font-variant-numeric:tabular-nums;font-weight:600}
+.language-switch{display:flex;align-items:center;gap:2px;flex-shrink:0;border:1px solid var(--line);background:#e8edf5;border-radius:8px;padding:3px}
+.language-switch button{border:0;background:transparent;color:var(--muted);border-radius:5px;padding:7px 5px;font-size:10px;font-weight:650;line-height:1}
+.language-switch button[aria-pressed=true]{background:white;color:var(--blue);box-shadow:0 1px 3px #00356712}
+.language-switch button:hover{color:var(--blue)}
+.restaurant-row .select-wrap select{font-size:13px;padding-left:11px;padding-right:28px;text-overflow:ellipsis}
+html[lang=en] .corner-title{font-size:12px;line-height:1.55}
+html[lang=en] .menu-line{font-size:12px;line-height:1.8}
+html[lang=en] .date-display{font-size:13px}

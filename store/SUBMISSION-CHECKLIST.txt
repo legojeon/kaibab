@@ -1,0 +1,41 @@
+KaiBab 1.2.0 — publication checklist (2026-10-29)
+
+Prepared locally
+[done] Manifest V3; only storage and https://www.kaist.ac.kr/* permissions.
+[done] English/Korean extension metadata and popup UI; unofficial affiliation disclosure.
+[done] Fixed source paths, HTTPS, no credentials/referrer, no redirects, 2 MiB response limit.
+[done] Local text-only rendering, restrictive CSP, cache schema/retention checks.
+[done] Bilingual privacy policy: preferences, cache, KAIST network requests, deletion and support.
+[done] English/Korean store description, single purpose, permission and data-use explanations.
+[done] Allowlisted store ZIP builder with manifest.json at its root.
+[done] Security and live-browser test scripts.
+[done] Store image generator: padded 128px icon, 1280×800 locale screenshots, optional 440×280 promo.
+
+Still required before submission
+[ ] Authorize and create the PUBLIC legojeon/kaibab repository; review the files being published.
+[ ] Publish /docs from the main branch with GitHub Pages and confirm the privacy URL opens without login.
+[ ] Confirm publisher display name; independently register/verify the Chrome Web Store developer account email.
+[ ] Complete developer registration / one-time fee and required account security checks in the current dashboard.
+[ ] Confirm rights/terms for public redistribution of the school menu content. The code uses public pages,
+    but this review does not establish a KAIST licence or permission. No school logo is used.
+[ ] Decide whether to grant an open-source code licence; no licence has been guessed.
+[ ] Upload the generated store ZIP, icon and at least one screenshot; add both listing locales.
+[ ] Use the Website content disclosure for the public menu information; explain locally stored preferences
+    and direct KAIST requests. Review the actual dashboard fields and limited-use certifications.
+[ ] Enter the live privacy policy and support URLs. GitHub support does not replace email verification.
+[ ] Choose distribution countries / visibility and submit for Google's review. Approval is not guaranteed.
+
+Sources checked
+ZIP root, name/version and description length:
+https://developer.chrome.com/docs/webstore/prepare
+Privacy and permission fields:
+https://developer.chrome.com/docs/webstore/cws-dashboard-privacy
+Local processing and privacy-policy requirement:
+https://developer.chrome.com/docs/webstore/program-policies/user-data-faq
+Store icons and screenshots (128px icon; at least one 1280×800 or 640×400 screenshot):
+https://developer.chrome.com/docs/webstore/images
+Developer registration and email:
+https://developer.chrome.com/docs/webstore/register
+https://developer.chrome.com/docs/webstore/set-up-account
+Affiliation / intellectual-property policy:
+https://developer.chrome.com/docs/webstore/program-policies/impersonation-and-intellectual-property

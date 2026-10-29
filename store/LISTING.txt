@@ -1,0 +1,68 @@
+KaiBab — Chrome Web Store submission copy
+Prepared 2026-10-29 for version 1.2.0. URLs below are planned until the repository and Pages site are published.
+
+NAME / 표기
+Brand: KaiBab
+Repository/folder/package: kaibab
+English listing: KaiBab — KAIST Menu
+Korean listing: KaiBab — KAIST 식단
+Suggested publisher name: legojeon (confirm in the developer account)
+Suggested category: Tools (choose the closest available dashboard category)
+
+ENGLISH DESCRIPTION
+KaiBab puts public KAIST cafeteria menus in a compact toolbar popup.
+
+• Choose from 12 cafeterias and dining locations.
+• View breakfast, lunch and dinner, or browse another date.
+• Switch between Korean and English using the KO / EN control.
+• See menu prices alongside their meal sections.
+• Remember your selected cafeteria and language on this browser.
+• View regular menus and operating information for locations without daily menus.
+• Reuse recently loaded menus and see a warning when a saved menu is shown after a connection failure.
+
+Privacy: KaiBab stores cafeteria/language preferences and public menu content locally. It fetches the selected public page directly from www.kaist.ac.kr over HTTPS; KAIST receives ordinary connection information such as your IP address and the requested cafeteria/date/language. No developer-operated server receives your selections or cached menus. No ads, analytics, browsing-history access, account login or remote executable code.
+
+KaiBab is an independent, unofficial project. It is not affiliated with, endorsed by or operated by KAIST. Information depends on the official cafeteria website; menus, hours and prices may change. A blank menu does not necessarily mean a cafeteria is closed.
+
+한국어 상세 설명
+KaiBab은 KAIST의 공개 식단을 작은 팝업에서 보여주는 비공식 확장 프로그램입니다.
+
+• 식당과 식사 장소 12곳 선택
+• 아침·점심·저녁 식단 및 날짜별 조회
+• KO / EN 버튼으로 한국어·영어 전환
+• 메뉴 코너 옆 가격 표시
+• 마지막 식당과 언어 선택 기억
+• 날짜별 식단이 없는 곳의 고정 메뉴와 운영 안내
+• 최근 식단 캐시, 연결 실패 시 저장된 식단이라는 경고 표시
+
+개인정보: 식당·언어 설정과 공개 식단 내용은 브라우저에만 저장합니다. 선택한 공개 페이지를 www.kaist.ac.kr에 HTTPS로 직접 요청하므로 KAIST에는 IP 주소 등 일반 접속 정보와 요청한 식당·날짜·언어가 전달됩니다. 선택 설정이나 캐시를 수집하는 개발자 서버, 광고, 분석 도구, 방문 기록 접근, 로그인, 원격 실행 코드가 없습니다.
+
+KaiBab은 KAIST와 제휴하거나 학교의 제작·보증을 받은 앱이 아닙니다. 정보는 공식 식단 페이지에 따라 달라지며, 메뉴·시간·가격은 변경될 수 있습니다. 빈 식단을 휴무로 단정하지 않습니다.
+
+SINGLE PURPOSE
+Display public KAIST cafeteria menus and dining information in a compact popup, with cafeteria/date/meal selection and Korean/English switching.
+
+PERMISSION JUSTIFICATION — storage
+Store the selected cafeteria and language, plus a bounded local cache of public menu data. No Chrome storage sync or developer backend is used. Cached menus are refreshed on demand, used fresh for five minutes, and cleaned up on popup launch and writes after seven days or beyond 60 entries.
+
+HOST PERMISSION JUSTIFICATION — https://www.kaist.ac.kr/*
+Fetch the official public Korean and English cafeteria HTML pages selected in the popup. Code and CSP restrict requests to /kr/html/campus/053001.html and /en/html/campus/053001.html. Chrome host permissions are granted at host/scheme scope, so narrowing a manifest path would not reduce the actual host permission. No content scripts or other-site access.
+
+REMOTE CODE
+No, I am not using remote code.
+All JavaScript is packaged with the extension. Retrieved HTML is parsed as text data by local code; its scripts and event handlers are not executed.
+
+DATA USE DISCLOSURE — suggested entries, confirm against the live dashboard
+Website content: disclose public cafeteria menu text, prices, hours and notices fetched from KAIST and cached locally. Google's policy includes local processing; do not claim that nothing is handled just because there is no developer backend.
+Personally identifiable information, health, financial/payment, authentication, personal communications, location, general web history and activity tracking: not collected by this extension. No tab/browsing-history APIs or click/keystroke analytics are used.
+Local preferences: cafeteria and language; describe explicitly in the privacy policy. The requested cafeteria/date/language and normal connection information reach KAIST to deliver the requested public page.
+Data sale: none. Unrelated use/transfer: none. Creditworthiness/lending use: none. Certify only after reviewing the final artifact and policy.
+
+URLs — proposed, verify public access after publishing
+Home: https://legojeon.github.io/kaibab/
+Privacy policy: https://legojeon.github.io/kaibab/privacy.html
+Support: https://github.com/legojeon/kaibab/issues
+Source: https://github.com/legojeon/kaibab
+
+REVIEWER NOTES
+No account or login is needed. Open the toolbar popup, choose Faculty · N6 / 교수회관 · N6, and choose Lunch / 점심. KO and EN switch both source page and UI. Some dates or meals are empty; use a weekday with a posted menu. Food Court / Faculty Club / Durken Dosirak / Taeulgwan show dining guides. Settings are local. The school website is a public external dependency and may be temporarily unavailable.

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KaiBab · KAIST 식단</title>
+  <link rel="stylesheet" href="popup.css">
+  <script type="module" src="popup.js"></script>
+</head>
+<body>
+  <section class="controls" aria-label="식단 선택">
+    <div class="restaurant-row">
+      <div class="select-wrap"><select id="restaurant" aria-label="식당 선택"></select><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5"/></svg></div>
+      <div class="language-switch" role="group" aria-label="Language / 언어">
+        <button type="button" data-language="ko" lang="ko" aria-label="한국어" title="한국어" aria-pressed="true">KO</button>
+        <button type="button" data-language="en" lang="en" aria-label="English" title="English" aria-pressed="false">EN</button>
+      </div>
+      <button id="refresh" class="icon-button" aria-label="식단 새로고침" title="식단 새로고침"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 7v5h-5M4 17v-5h5M6.1 7a7 7 0 0 1 11.5-1L20 9M4 15l2.4 3A7 7 0 0 0 18 17"/></svg></button>
+    </div>
+    <div id="date-controls">
+      <div class="date-row">
+        <button id="previous" class="icon-button" aria-label="이전 날짜"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 6-6 6 6 6"/></svg></button>
+        <div class="date-display"><span id="date-label"></span><span id="today-badge">오늘</span><input id="date-picker" type="date" aria-label="날짜 선택" title="날짜 선택"></div>
+        <button id="next" class="icon-button" aria-label="다음 날짜"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 6 6 6-6 6"/></svg></button>
+        <button id="today" class="text-button" title="오늘 날짜로 이동">오늘</button>
+      </div>
+      <div id="meal-tabs" class="meal-tabs" role="tablist" aria-label="식사 시간">
+        <button id="tab-0" role="tab" data-meal="0" aria-controls="menu" aria-selected="false"><span aria-hidden="true">◔</span> 아침</button>
+        <button id="tab-1" role="tab" data-meal="1" aria-controls="menu" aria-selected="false"><span aria-hidden="true">☀</span> 점심</button>
+        <button id="tab-2" role="tab" data-meal="2" aria-controls="menu" aria-selected="false"><span aria-hidden="true">☾</span> 저녁</button>
+      </div>
+    </div>
+    <p id="guide-label" class="guide-label" hidden>고정 메뉴 · 운영 안내</p>
+  </section>
+  <main id="scroll-area">
+    <div id="status" class="status" role="status" aria-live="polite"></div>
+    <section id="menu" role="tabpanel" tabindex="0" aria-label="식단"></section>
+    <details id="notice" hidden><summary><span id="notice-label">운영시간 · 가격 · 알레르기 안내</span><span class="notice-toggle" aria-hidden="true">＋</span></summary><p id="notice-text"></p></details>
+    <p id="disclaimer" class="disclaimer" hidden>식당 사정에 따라 메뉴가 변경될 수 있어요.</p>
+  </main>
+</body>
+</html>

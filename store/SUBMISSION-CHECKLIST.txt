@@ -1,4 +1,4 @@
-KaiBab 1.2.0 — publication checklist (2026-10-29)
+KaiBab 1.2.1 — publication checklist (2026-10-29)
 
 Prepared locally
 [done] Manifest V3; only storage and https://www.kaist.ac.kr/* permissions.

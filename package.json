@@ -1,13 +1,15 @@
 {
   "name": "kaibab",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "private": true,
-  "description": "Unofficial bilingual KAIST cafeteria menu extension",
+  "description": "View menus and prices from the official KAIST website.",
   "scripts": {
     "test": "node tests/security.cjs",
     "test:live": "node tests/live.cjs",
     "assets": "node scripts/store-assets.cjs",
     "package": "python3 scripts/package.py"
   },
-  "devDependencies": {"playwright": "1.64.1"}
+  "devDependencies": {
+    "playwright": "1.64.1"
+  }
 }

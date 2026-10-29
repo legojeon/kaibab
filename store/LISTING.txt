@@ -1,5 +1,5 @@
 KaiBab — Chrome Web Store submission copy
-Prepared 2026-10-29 for version 1.2.0. Public source and GitHub Pages URLs are listed below.
+Prepared 2026-10-29 for version 1.2.1. Public source and GitHub Pages URLs are listed below.
 
 NAME / 표기
 Brand: KaiBab
@@ -8,6 +8,10 @@ English listing: KaiBab — KAIST Menu
 Korean listing: KaiBab — KAIST 식단
 Suggested publisher name: legojeon (confirm in the developer account)
 Suggested category: Tools (choose the closest available dashboard category)
+
+PACKAGE SUMMARY
+English: View menus and prices from the official KAIST website.
+한국어: KAIST 공식 홈페이지의 식단과 가격을 간편하게 확인하세요.
 
 ENGLISH DESCRIPTION
 KaiBab puts public KAIST cafeteria menus in a compact toolbar popup.

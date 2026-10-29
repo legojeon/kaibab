@@ -1,5 +1,5 @@
 KaiBab — Chrome Web Store submission copy
-Prepared 2026-10-29 for version 1.2.0. URLs below are planned until the repository and Pages site are published.
+Prepared 2026-10-29 for version 1.2.0. Public source and GitHub Pages URLs are listed below.
 
 NAME / 표기
 Brand: KaiBab
@@ -58,7 +58,7 @@ Personally identifiable information, health, financial/payment, authentication, 
 Local preferences: cafeteria and language; describe explicitly in the privacy policy. The requested cafeteria/date/language and normal connection information reach KAIST to deliver the requested public page.
 Data sale: none. Unrelated use/transfer: none. Creditworthiness/lending use: none. Certify only after reviewing the final artifact and policy.
 
-URLs — proposed, verify public access after publishing
+PUBLIC URLS
 Home: https://legojeon.github.io/kaibab/
 Privacy policy: https://legojeon.github.io/kaibab/privacy.html
 Support: https://github.com/legojeon/kaibab/issues

@@ -34,8 +34,11 @@ Read store/SUBMISSION-CHECKLIST.txt and store/LISTING.txt first.
 Only upload dist/kaibab-1.2.0-chrome-web-store.zip to Chrome Web Store.
 The archive contains manifest.json at the root and only explicitly allowlisted extension files.
 Do not upload a ZIP of this entire repository.
-The GitHub / Pages URLs in the documentation are proposed until deployed and verified.
-No repository, website or store listing has been published by these local build scripts.
+Source: https://github.com/legojeon/kaibab
+Home: https://legojeon.github.io/kaibab/
+Privacy: https://legojeon.github.io/kaibab/privacy.html
+Support: https://github.com/legojeon/kaibab/issues
+The public repository and Pages hosting are configured. Chrome Web Store submission remains pending.
 
 Data and affiliation
 Preferences and menu cache stay in local extension storage. Requests go directly to KAIST;

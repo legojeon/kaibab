@@ -1,6 +1,6 @@
 {
   "name": "kaibab",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "private": true,
   "description": "View menus and prices from the official KAIST website.",
   "scripts": {

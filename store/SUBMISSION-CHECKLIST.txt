@@ -1,8 +1,8 @@
-KaiBab 1.2.1 — publication checklist (2026-10-29)
+KaiBab 1.2.2 — publication checklist (2026-10-29)
 
 Prepared locally
 [done] Manifest V3; only storage and https://www.kaist.ac.kr/* permissions.
-[done] English/Korean extension metadata and popup UI; unofficial affiliation disclosure.
+[done] English/Korean extension metadata and popup UI; independent developer / source distinction in supporting descriptions.
 [done] Fixed source paths, HTTPS, no credentials/referrer, no redirects, 2 MiB response limit.
 [done] Local text-only rendering, restrictive CSP, cache schema/retention checks.
 [done] Bilingual privacy policy: preferences, cache, KAIST network requests, deletion and support.
@@ -19,12 +19,14 @@ Still required before submission
 [ ] Complete developer registration / one-time fee and required account security checks in the current dashboard.
 [ ] Confirm rights/terms for public redistribution of the school menu content. The code uses public pages,
     but this review does not establish a KAIST licence or permission. No school logo is used.
-[ ] Decide whether to grant an open-source code licence; no licence has been guessed.
 [ ] Upload the generated store ZIP, icon and at least one screenshot; add both listing locales.
 [ ] Use the Website content disclosure for the public menu information; explain locally stored preferences
     and direct KAIST requests. Review the actual dashboard fields and limited-use certifications.
 [ ] Enter the live privacy policy and support URLs. GitHub support does not replace email verification.
 [ ] Choose distribution countries / visibility and submit for Google's review. Approval is not guaranteed.
+
+Optional source distribution decision
+[ ] Choose an open-source code licence only if desired. Public source alone grants no blanket reuse licence; choosing one is not a Chrome Web Store submission requirement.
 
 Sources checked
 ZIP root, name/version and description length:

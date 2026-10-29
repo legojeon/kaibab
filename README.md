@@ -10,16 +10,16 @@ A Chrome extension for KAIST cafeteria menus and prices.
 
 ## Features
 
-- Menus and dining information for 12 locations
-- Date, breakfast, lunch and dinner selection
-- Korean and English
-- Prices beside each menu section
+- 12 cafeteria options from the KAIST website
+- Daily menus where available; dining guides for the other options
+- Korean and English menus from the corresponding KAIST pages
+- Prices where listed in the source
 - Saved cafeteria and language preferences
-- Recent menus available offline, with a saved-menu notice
+- Previously loaded menus available without a connection while a matching saved copy remains; saved information may be out of date
 
 ## Install
 
-Chrome Web Store listing pending. To install manually:
+To install manually:
 
 1. Select Code → Download ZIP and extract the archive.
 2. Open chrome://extensions in Chrome.
@@ -31,12 +31,12 @@ If you move the folder, load it again from the new location.
 
 ## Privacy
 
-Preferences and recent menus stored locally in Chrome. No ads, analytics or developer collection server.
+The extension saves your cafeteria and language preferences and recent menus in local Chrome storage. No ads, analytics or developer collection server.
 
-Menu requests go directly to KAIST, which receives connection information such as your IP address. Details in the [privacy policy](https://legojeon.github.io/kaibab/privacy.html).
+To fetch a menu, it sends the selected cafeteria, date and language to KAIST. KAIST also receives connection information such as your IP address. Details in the [privacy policy](https://legojeon.github.io/kaibab/privacy.html).
 
 ## Source
 
 [KAIST cafeteria website](https://www.kaist.ac.kr/en/html/campus/053001.html?dvs_cd=emp)
 
-Unofficial. Not affiliated with or endorsed by KAIST. Menus, hours and prices subject to change.
+KaiBab is independently developed and is not affiliated with or endorsed by KAIST. Menus, hours and prices subject to change.
